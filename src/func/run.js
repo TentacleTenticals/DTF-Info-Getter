@@ -17,21 +17,21 @@ new El().Div({
         text: 'Главная',
         attr: ['name', 'main'],
         onclick: () => {
-          document.location.href = '/';
+          document.location.href = `${document.location.origin}`;
         }
       },
       {
         text: 'О профиле',
         attr: ['name', 'aboutProfile'],
         onclick: () => {
-          document.location.href = '/aboutProfile/index.html';
+          document.location.href = `${document.location.origin}/aboutProfile/index.html`;
         }
       },
       {
         text: 'Обо мне',
         attr: ['name', 'aboutMe'],
         onclick: () => {
-          document.location.href = '/aboutMe/index.html';
+          document.location.href = `${document.location.origin}/aboutMe/index.html`;
         }
       },
     ].forEach(e => {
