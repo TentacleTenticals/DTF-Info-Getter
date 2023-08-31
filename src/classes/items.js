@@ -1,5 +1,5 @@
-import {El} from '../classes/main';
-import {attachment} from '../func/attach';
+import {El} from '../classes/main.js';
+import {attachment} from '../func/attach.js';
 
 export class Item{
   getTime(d){
