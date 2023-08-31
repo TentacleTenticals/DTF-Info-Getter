@@ -1,5 +1,5 @@
-import {Item} from '../classes/items';
-import {El} from '../classes/main';
+import {Item} from '../classes/items.js';
+import {El} from '../classes/main.js';
 
 export function out({type, path, data, i}){
   // console.log(i);
