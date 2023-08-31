@@ -1,6 +1,6 @@
 import {El} from '../src/classes/main.js';
-import {out} from '../src/func/output';
-import {dtfApi} from '../src/func/dtfApi';
+import {out} from '../src/func/output.js';
+import {dtfApi} from '../src/func/dtfApi.js';
 
 new El().Form({
   path: document.body,
