@@ -1,4 +1,4 @@
-import {El} from '../classes/main';
+import {El} from '../classes/main.js';
 
 export function attachment({path, type, i}){
   // console.log(i)
