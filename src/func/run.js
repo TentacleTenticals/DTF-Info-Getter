@@ -1,6 +1,7 @@
 // console.log('TEST', import);
 import {El} from '../classes/main.js';
 const page = document.location.href.replace(/https:\/\/([^/]*)(.*)/, '$2');
+const path = 'DTF-Info-Getter';
 
 new El().Div({
   path: document.body,
@@ -17,21 +18,21 @@ new El().Div({
         text: 'Главная',
         attr: ['name', 'main'],
         onclick: () => {
-          document.location.href = `${document.location.origin}`;
+          document.location.href = `${document.location.origin}${path && '/'+path||''}`;
         }
       },
       {
         text: 'О профиле',
         attr: ['name', 'aboutProfile'],
         onclick: () => {
-          document.location.href = `${document.location.origin}/aboutProfile/index.html`;
+          document.location.href = `${document.location.origin}${path && '/'+path||''}/aboutProfile/index.html`;
         }
       },
       {
         text: 'Обо мне',
         attr: ['name', 'aboutMe'],
         onclick: () => {
-          document.location.href = `${document.location.origin}/aboutMe/index.html`;
+          document.location.href = `${document.location.origin}${path && '/'+path||''}/aboutMe/index.html`;
         }
       },
     ].forEach(e => {
